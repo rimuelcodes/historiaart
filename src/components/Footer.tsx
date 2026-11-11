@@ -394,13 +394,6 @@ export const Footer: React.FC<FooterProps> = ({
             <ArrowUp className="w-3.5 h-3.5 stroke-[1.25]" />
           </button>
         </div>
-
-        {/* Subtle Monumental Bottom Wordmark (Edge-to-Edge Architectural Facade) */}
-        <div className="pt-12 sm:pt-16 pb-2 overflow-hidden border-t border-white/[0.04] mt-10 text-center select-none pointer-events-none">
-          <span className="font-serif text-[15vw] sm:text-[18vw] font-normal leading-none tracking-[0.28em] text-white/[0.04] uppercase whitespace-nowrap block pl-[0.28em]">
-            HISTORIA
-          </span>
-        </div>
       </div>
     </footer>
   );
