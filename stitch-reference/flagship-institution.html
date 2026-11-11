@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#4c463e","primary-container":"#5a4e3e","surface-container-lowest":"#ffffff","on-error-container":"#93000a","secondary-fixed-dim":"#e0c29f","on-background":"#1b1c1a","background":"#fbf9f5","surface":"#fbf9f5","surface-container-high":"#eae8e4","inverse-on-surface":"#f2f0ec","tertiary-fixed-dim":"#c8c6c5","surface-bright":"#fbf9f5","error":"#ba1a1a","surface-variant":"#e4e2de","secondary":"#715a3e","primary-fixed":"#f2e0ca","surface-container":"#f0eeea","on-tertiary-container":"#c4c2c1","on-tertiary":"#ffffff","surface-container-highest":"#e4e2de","primary":"#423728","on-secondary-fixed-variant":"#584329","on-surface":"#1b1c1a","on-primary-container":"#d1c0ab","on-primary-fixed":"#231a0d","tertiary":"#393939","outline-variant":"#cfc5ba","primary-fixed-dim":"#d5c4af","secondary-fixed":"#fdddb9","surface-dim":"#dbdad6","on-tertiary-fixed-variant":"#474646","inverse-surface":"#30312e","on-secondary-container":"#786044","tertiary-container":"#515050","on-secondary-fixed":"#281803","outline":"#7e766d","surface-container-low":"#f5f3ef","surface-tint":"#695c4c","inverse-primary":"#d5c4af","on-error":"#ffffff","on-secondary":"#ffffff","on-primary-fixed-variant":"#504535","tertiary-fixed":"#e5e2e1","secondary-container":"#fdddb9","on-tertiary-fixed":"#1c1b1b","error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-desktop":"2.5rem","space-lg":"1.5rem","margin-desktop":"3.5rem","margin":"1.25rem","space-xl":"3rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem"},fontFamily:{"headline-md":["Bodoni Moda"],"headline-lg":["Bodoni Moda"],"display-lg-mobile":["Bodoni Moda"],"display-lg":["Bodoni Moda"],"display-md":["Bodoni Moda"],"label-sm":["Space Mono"],"body-md":["Space Mono"],"title-md":["Bodoni Moda"],"body-lg":["Space Mono"],"label-md":["Space Mono"],"display-md-mobile":["Bodoni Moda"]},fontSize:{"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"400"}],"display-lg":["72px",{"lineHeight":"80px","letterSpacing":"-0.03em","fontWeight":"400"}],"display-md":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"label-sm":["9px",{"lineHeight":"14px","letterSpacing":"0.18em","fontWeight":"700"}],"body-md":["13px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"400"}],"display-md-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-[#F6F4F0] border-b border-[#DCD8D0]"><div class="h-20 w-full px-5 lg:px-margin-desktop flex items-center justify-between"><a class="flex flex-col group" data-path="masterworks" href="#"><span class="font-headline-md text-headline-md tracking-tight text-on-surface uppercase group-hover:text-primary transition-colors">HISTORIA ART</span><span class="font-label-sm text-label-sm tracking-[0.18em] text-on-surface-variant uppercase mt-0.5">GALLERY &amp; MUSEUM • MANILA</span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b border-primary"><a aria-current="page" class="uppercase tracking-[0.14em] transition-colors py-1 text-primary font-bold border-b border-primary" data-path="exhibitions" href="#">EXHIBITIONS</a><a class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="masterworks" href="#">MASTERWORKS</a><a class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="artists" href="#">ARTISTS</a><a class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="curatorial-journal" href="#">CURATORIAL JOURNAL</a><a class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="visit" href="#">VISIT</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm uppercase tracking-[0.18em]" data-path="private-viewing" href="#">PRIVATE VIEWING</a><a aria-label="Archive Collection Bag" class="relative p-2 text-on-surface hover:text-primary transition-colors" data-path="curatorial-bag" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-sm text-[8px] flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- ========================================================================= -->
+<!-- 1. MONUMENTAL HERO STAGE (Asymmetrical Architectural Composition)         -->
+<!-- ========================================================================= -->
+<section class="w-full border-b border-[#DCD8D0] relative overflow-hidden">
+<!-- Subtle Architectural Background Grid lines -->
+<div class="absolute inset-0 pointer-events-none opacity-40 grid grid-cols-12 max-w-[1720px] mx-auto px-5 lg:px-margin-desktop">
+<div class="border-r border-[#DCD8D0] h-full hidden lg:block col-span-5"></div>
+<div class="h-full col-span-7"></div>
+</div>
+<div class="w-full max-w-[1720px] mx-auto px-5 lg:px-margin-desktop py-12 lg:py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<!-- Left Column: Editorial & Provenance Manifesto -->
+<div class="lg:col-span-5 flex flex-col justify-between z-10">
+<div class="space-y-6">
+<!-- Archival Metadata Slip Marker -->
+<div class="inline-flex items-center gap-2.5 px-3 py-1.5 bg-surface-container border border-[#DCD8D0]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">CATALOGUE RAISONNÉ NO. 15-M • MANILA, EST. 2015</span>
+</div>
+<div class="space-y-3">
+<span class="font-label-md text-label-md uppercase tracking-[0.22em] text-secondary font-bold block">INSTITUTIONAL PERMANENT REPOSITORY</span>
+<h1 class="font-display-lg text-display-md lg:text-[68px] lg:leading-[74px] text-primary tracking-[-0.025em] font-normal uppercase">
+                Where History Meets Contemporary Mastery
+              </h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+              An institutional sanctuary celebrating pivotal epochs of Philippine and international fine art. From 19th-century academic realism to luminous modernism and visionary contemporary forms.
+            </p>
+<!-- Interactive Curatorial Call-to-Actions -->
+<div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex items-center justify-center gap-3 px-7 py-4 bg-primary text-[#F6F4F0] border border-primary hover:bg-primary-container transition-all group font-label-md text-label-md uppercase tracking-[0.16em]" href="#flagship-spotlight">
+<span>ENTER CURRENT EXHIBITION</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-4 border border-[#7E766D] text-primary hover:border-primary hover:bg-surface-container transition-colors font-label-md text-label-md uppercase tracking-[0.14em]" href="#masterworks-repository">
+<span>EXPLORE MASTER COLLECTION [48 WORKS]</span>
+</a>
+</div>
+</div>
+<!-- Exhibition Live Ticker Ledger -->
+<div class="mt-12 pt-6 border-t border-[#DCD8D0] grid grid-cols-3 gap-3">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline block">LOAN REPOSITORY</span>
+<span class="font-headline-md text-headline-md text-primary font-normal">12 Works</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">International Exchange</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline block">ARCHIVAL VAULT</span>
+<span class="font-headline-md text-headline-md text-primary font-normal">420+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Catalogued Pieces</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline block">PROVENANCE</span>
+<span class="font-headline-md text-headline-md text-secondary font-normal">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Forensic Verified</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Grand Masterpiece Display (Gilded Salon Frame) -->
+<div class="lg:col-span-7 flex flex-col items-center z-10">
+<div class="relative w-full max-w-[760px] group">
+<!-- Overhead Museum Ambient Spotlight Glow (Warm Tonal Scrim) -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-secondary-fixed/30 blur-2xl pointer-events-none rounded-full"></div>
+<!-- Gilded Museum Masterpiece Frame Container -->
+<div class="relative p-4 sm:p-6 bg-[#2B231A] border-4 border-[#8C7355] shadow-2xl transition-transform duration-700 ease-out hover:scale-[1.008]">
+<!-- Inner Classical Fillet Matting -->
+<div class="p-2 sm:p-3 bg-[#1A1510] border border-[#B3936E]/60">
+<div class="relative overflow-hidden bg-black aspect-[4/3] flex items-center justify-center">
+<img alt="Academic Assembly in Madrid by Juan Luna y Novicio - Large-scale 19th-century academic oil painting inside an opulent museum salon" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQvn2fgzZ6qFO6gQw7P1XIJRUw0Z1guZZ8EZ9Qlwixrtnl12nDnQ0IBwtQ-BujXpBfDxQeTdEzLwZyCFTanwNCloO_Qogzb8ADt-T9pdvO75VBH7xQVsACVOYsR7Ld37PBrFeHiHsIA1UabCV4gEcsx6E-AnasW7hbDnoPGy45ZUzzhRfbuxqU95anQuSvIekJ5ZvN4gstHd25YIdAOpLlvSlXSA5fuvZoPjjjHp07"/>
+<!-- Archival Watermark Overlay -->
+<div class="absolute top-4 right-4 pointer-events-none opacity-80 bg-black/60 px-2.5 py-1 border border-white/20">
+<span class="font-label-sm text-label-sm text-white/90 uppercase tracking-widest">HISTORIA ACC. #1884.01-LUNA</span>
+</div>
+<!-- Quick Zoom Floating Indicator -->
+<div class="absolute bottom-4 left-4 bg-[#141414]/80 backdrop-blur-sm px-3 py-1.5 border border-[#8C7355]/40 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">zoom_in</span>
+<span class="font-label-sm text-label-sm text-white uppercase tracking-wider">3200 DPI GIGAPIXEL SCAN</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Museum Engraved Brushed Brass Wall Plaque -->
+<div class="mt-5 mx-auto max-w-xl bg-[#E8E4DC] border border-[#8C7355]/50 p-4 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-[17px] leading-tight text-primary font-normal tracking-wide">JUAN LUNA Y NOVICIO</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">(1857–1899)</span>
+</div>
+<p class="font-title-md text-[14px] italic text-on-surface-variant">Academic Assembly in Madrid, 1884</p>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 pt-1 font-label-sm text-label-sm text-outline">
+<span>OIL ON CANVAS</span>
+<span>•</span>
+<span>NATIONAL TREASURE ARCHIVE</span>
+<span>•</span>
+<span class="text-secondary font-bold">MAIN HALL NORTH WING</span>
+</div>
+</div>
+<!-- Curatorial Audio Guide Button -->
+<button class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 bg-primary text-on-primary hover:bg-secondary transition-colors shrink-0 font-label-sm text-label-sm uppercase tracking-wider" id="hero-audio-btn" onclick="toggleHeroAudio()" title="Play Audio Curatorial Commentary">
+<span class="material-symbols-outlined text-[16px]" id="audio-icon">volume_up</span>
+<span id="audio-text">AUDIO NOTE (03:42)</span>
+</button>
+</div>
+<p class="text-center font-label-sm text-label-sm text-outline uppercase tracking-[0.16em] mt-2">
+              Curatorial Commentary by Dr. Rafael Ilustre • Chief Conservator, Republic National Archive
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 2. THE BLACK BOX GALLERY WING (Flagship Inverted Spotlight Room)          -->
+<!-- ========================================================================= -->
+<section class="w-full bg-[#141414] text-[#F6F4F0] py-20 lg:py-32 relative border-b border-[#2C2C2C] overflow-hidden" id="flagship-spotlight">
+<!-- Architectural Radial Glow behind Circular Amorsolo Masterwork -->
+<div class="absolute right-10 lg:right-1/4 top-1/2 -translate-y-1/2 w-[520px] h-[520px] bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="w-full max-w-[1720px] mx-auto px-5 lg:px-margin-desktop relative z-10">
+<!-- Section Architectural Header -->
+<div class="border-b border-[#2C2C2C] pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-2.5 py-1 bg-[#222222] border border-[#3A3A3A] mb-3">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary-fixed">FLAGSHIP RETROSPECTIVE • SPECIAL PRESENTATION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg lg:text-[46px] lg:leading-[54px] text-[#F6F4F0] tracking-tight uppercase font-normal">
+            Dialogues Across Centuries: East &amp; West
+          </h2>
+</div>
+<div class="text-left md:text-right">
+<span class="font-label-sm text-label-sm text-[#8E8A82] uppercase tracking-[0.18em] block">RUNNING EPOCH</span>
+<span class="font-body-md text-body-md text-secondary-fixed-dim uppercase">OCTOBER 15, 2024 — FEBRUARY 28, 2025</span>
+</div>
+</div>
+<!-- Spotlight Dual Content Presentation -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Curatorial Context & Wall Essay -->
+<div class="lg:col-span-5 space-y-6">
+<p class="font-title-md text-[21px] leading-relaxed text-[#DCD8D0] font-light">
+            A landmark curatorial juxtaposition tracing classical European academic realism alongside the radiant pastoral impressionism of the Philippine Golden Era.
+          </p>
+<p class="font-body-md text-body-md text-[#9E9A92] leading-relaxed">
+            By confronting the monumental historicism of the Madrid Academy with Amorsolo’s sunlit agrarian canvases, <span class="text-[#F6F4F0]">"Dialogues"</span> excavates how Filipino masters appropriated and transcended Western imperial visual languages, inventing an independent chromatic luminosity that redefined Southeast Asian modernism.
+          </p>
+<!-- Archival Exhibition Spec Sheet -->
+<div class="bg-[#1C1C1C] border border-[#2D2D2D] p-5 space-y-3">
+<div class="flex justify-between items-center border-b border-[#2C2C2C] pb-2">
+<span class="font-label-sm text-label-sm uppercase text-[#88857E]">INSTITUTIONAL VENUE</span>
+<span class="font-label-md text-label-md text-[#E0C29F]">SM Megamall 4F &amp; GH Mall Level 3</span>
+</div>
+<div class="flex justify-between items-center border-b border-[#2C2C2C] pb-2">
+<span class="font-label-sm text-label-sm uppercase text-[#88857E]">CURATORIAL CHAIRS</span>
+<span class="font-label-md text-label-md text-[#E0C29F]">Sofia Zobel-Araneta &amp; Prof. E. Torres</span>
+</div>
+<div class="flex justify-between items-center border-b border-[#2C2C2C] pb-2">
+<span class="font-label-sm text-label-sm uppercase text-[#88857E]">ACCREDITATION</span>
+<span class="font-label-md text-label-md text-[#E0C29F]">National Commission for Culture and the Arts</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm uppercase text-[#88857E]">ADMISSION PROTOCOL</span>
+<span class="font-label-md text-label-md text-[#E0C29F]">Patrons, Fellows &amp; Reserved Passes</span>
+</div>
+</div>
+<!-- Dual Interaction Triggers -->
+<div class="pt-2 flex flex-col sm:flex-row gap-4">
+<button class="inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-secondary text-white hover:bg-secondary/90 transition-all font-label-md text-label-md uppercase tracking-[0.16em]" onclick="openVirtualTourModal()">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+<span>ENTER VIRTUAL VIEWING ROOM [3D]</span>
+</button>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-[#444] text-[#E0C29F] hover:border-[#E0C29F] hover:bg-[#222] transition-colors font-label-md text-label-md uppercase tracking-[0.14em]" href="#advisory-suite">
+<span>RESERVE CURATORIAL WALKTHROUGH</span>
+</a>
+</div>
+</div>
+<!-- Right: The Tondo Masterpiece Vitrine Showcase -->
+<div class="lg:col-span-7 flex flex-col items-center">
+<div class="relative w-full max-w-[620px] flex flex-col items-center">
+<!-- Circular Halo Backlight -->
+<div class="absolute inset-0 rounded-full border border-secondary-fixed/20 animate-pulse pointer-events-none scale-105"></div>
+<!-- Round Tondo Artwork Vitrine -->
+<div class="relative w-[340px] h-[340px] sm:w-[460px] sm:h-[460px] md:w-[500px] md:h-[500px] rounded-full p-3.5 bg-[#1F1913] border-4 border-[#C8A26A] shadow-[0_0_60px_rgba(200,162,106,0.18)] transition-transform duration-700 hover:scale-[1.02]">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-[#54412B] relative bg-black">
+<img alt="Fernando Amorsolo - The Golden Hour Gathering (Tondo Composition) 1938 circular masterpiece oil painting depicting pastoral figures by the river" class="w-full h-full object-cover transition-transform duration-1000 hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIzOcY2uOB4HiCANx5V7jPnjuxhhyuJ4sbjnBtpMrn-N0EmMMwncPYnEeTwnrkquGT3UQbsr5oYex2fY_xqLS4_w5xhx-6A4AEhuU7my6apBdfznSu8L-uygezdxpjiqewYYeQj6lUZz3A1yYxVKQ8R3yeVxsnbq1v2YSyjHi4moLP7OhZWAMsb34QwEw308--Lxsxrsv5aiKoBPiqmT-DbFvbHq2y_GE_GpC5HiYw"/>
+<!-- Floating Archival Lens Focus Badge -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur border border-[#C8A26A]/50 px-4 py-1.5 rounded-full pointer-events-none">
+<span class="font-label-sm text-label-sm text-[#F6F4F0] uppercase tracking-widest whitespace-nowrap">TONDO ACC. #1938.FA-09</span>
+</div>
+</div>
+</div>
+<!-- Wall Label Below Tondo -->
+<div class="mt-8 text-center max-w-lg space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-secondary-fixed block">NATIONAL ARTIST OF THE PHILIPPINES</span>
+<h3 class="font-headline-md text-headline-md text-[#F6F4F0] tracking-wide font-normal">
+                FERNANDO AMORSOLO Y CUENCA <span class="text-[#88857E] text-base">(1892–1972)</span>
+</h3>
+<p class="font-title-md text-[15px] italic text-[#D1C0AB]">
+                The Golden Hour Gathering (Tondo Pastoral Composition), 1938
+              </p>
+<div class="font-label-sm text-label-sm text-[#88857E] uppercase tracking-wider pt-1 flex items-center justify-center gap-2">
+<span>OIL ON LINEN MOUNTED ON HARDWOOD</span>
+<span>•</span>
+<span>COLLECTION OF THE FOUNDERS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. CURATED MASTERWORKS REPOSITORY (Swiss-Grid Masonry Architecture)       -->
+<!-- ========================================================================= -->
+<section class="w-full py-20 lg:py-28 border-b border-[#DCD8D0] bg-surface" id="masterworks-repository">
+<div class="w-full max-w-[1720px] mx-auto px-5 lg:px-margin-desktop">
+<!-- Section Header & Filter Architecture -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#DCD8D0] pb-8 mb-12 gap-6">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] font-bold">[ARCHIVAL REPOSITORY // ACTIVE LOTS]</span>
+</div>
+<h2 class="font-display-md text-display-md text-primary tracking-tight font-normal uppercase">
+            The Permanent Repository
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            A museum collection of unparalleled provenance, documented history, and institutional significance. Accessible for acquisition inquiries, foundation research, and institutional loans.
+          </p>
+</div>
+<!-- Filter Tab Buttons -->
+<div class="flex flex-wrap items-center gap-1.5 self-start lg:self-end" id="collection-filters">
+<button class="filter-btn active-filter px-4 py-2 text-label-sm font-label-sm uppercase tracking-widest bg-primary text-white border border-primary" onclick="filterCollection('all')">
+            ALL MASTERWORKS [48]
+          </button>
+<button class="filter-btn px-4 py-2 text-label-sm font-label-sm uppercase tracking-widest bg-surface-container border border-[#DCD8D0] text-on-surface hover:bg-surface-container-high transition-colors" onclick="filterCollection('paintings')">
+            PAINTINGS [26]
+          </button>
+<button class="filter-btn px-4 py-2 text-label-sm font-label-sm uppercase tracking-widest bg-surface-container border border-[#DCD8D0] text-on-surface hover:bg-surface-container-high transition-colors" onclick="filterCollection('sculptures')">
+            SCULPTURES [14]
+          </button>
+<button class="filter-btn px-4 py-2 text-label-sm font-label-sm uppercase tracking-widest bg-surface-container border border-[#DCD8D0] text-on-surface hover:bg-surface-container-high transition-colors" onclick="filterCollection('prints')">
+            ARCHIVAL PRINTS [8]
+          </button>
+</div>
+</div>
+<!-- 4 High-Consequence Curatorial Masterwork Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8" id="masterworks-grid">
+<!-- Card 1: Juan Luna -->
+<div class="artwork-card group bg-surface-container-low border border-[#DCD8D0] flex flex-col justify-between transition-all duration-300 hover:border-primary">
+<div class="p-4 border-b border-[#DCD8D0]">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-2">
+<span>LOT: #MNL-01892</span>
+<span class="text-secondary font-bold">CERTIFIED FORENSIC COA</span>
+</div>
+<!-- Artwork Photography Specimen Frame -->
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container-highest border border-[#DCD8D0]/60">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="19th-century academic European oil painting by Juan Luna depicting an intimate Parisian café interior with a sophisticated woman sitting at a table with gentlemen observing in the background, warm amber and chiaroscuro lighting, museum archival photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD1yHhuMhGvZVLEpO-7J51juZnm1iCNvtxqMC94ieXliHQ9n1jcu68-mVz2Lf240uSp4pSDPlT9kYX9dcxWLMXGyJ9WqVS2jQ5xxqpSKYefngTlmvF3ICzndzDVjHheoPhJHfDzOoun-mKuyNJeMFne4Eoqg3fc3n_cMAql2FvbOoHRHfJPZkJia1iIqbrA5OS96xrF6kVy4MvyMC38fZRof5NkTudOi5iaJ4mhMxy"/>
+<div class="absolute bottom-2 left-2 bg-primary/90 text-on-primary px-2 py-0.5 font-label-sm text-[8px] uppercase tracking-widest">
+                REGISTERED NATIONAL TREASURE
+              </div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.16em] block">JUAN LUNA Y NOVICIO</span>
+<h3 class="font-headline-md text-[20px] text-primary mt-0.5 leading-snug font-normal italic">
+                The Parisian Life (Intérieur d'un Café)
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+                1892 • Oil on fine Belgian canvas, 57 × 79 cm
+              </p>
+<!-- Provenance Ledger Snippet -->
+<div class="mt-3 pt-3 border-t border-[#DCD8D0] text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-outline uppercase block">PROVENANCE:</span>
+<span class="line-clamp-2">Ex-Collection Dr. Ariston Bautista Lin; Insular Life Collection; Private Vault Madrid.</span>
+</div>
+</div>
+<div class="pt-3 border-t border-[#DCD8D0] space-y-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">ACQUISITION VALUATION</span>
+<span class="font-label-md text-label-md text-primary font-bold">₱45,000,000</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-2 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="requestDossier('Juan Luna - Parisian Life')">
+                  INQUIRE LOT
+                </button>
+<button class="py-2.5 px-2 text-center bg-surface-container border border-[#DCD8D0] text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="viewProvenance('Juan Luna - Parisian Life')">
+                  VIEW DOSSIER
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Guillermo Tolentino -->
+<div class="artwork-card group bg-surface-container-low border border-[#DCD8D0] flex flex-col justify-between transition-all duration-300 hover:border-primary">
+<div class="p-4 border-b border-[#DCD8D0]">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-2">
+<span>LOT: #MNL-01935</span>
+<span class="text-secondary font-bold">BRONZE CAST FOUNDRY SEAL</span>
+</div>
+<!-- Sculpture Photo Frame -->
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container-highest border border-[#DCD8D0]/60">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Monumental classical bronze sculpture study of an idealized male figure by Guillermo Tolentino, patinated dark bronze with deep highlights on a white Carrara marble plinth, dramatic museum spotlight in a gallery vitrine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP5ovk5gnHIrw-u-EkP4UId9COwJWgXYiGtrrxmuYY_M18ONqdvuBQtfF7vKdeSpdy3fW-aTE9kF94II4qjYfZMjrXPEDtmgY-RG1tARNk18J4tVHNP_a_eQgu7UY8PbQB215hMyL7QcNw3Qqg3GFMmzhwR1osmDilpq7bkFSoy8Wv_jsoZZT96h_ZBBXoldORyIqYZvHs8UbFhLNPxYGb27X1q5aLtUBFUy6Y5lqF"/>
+<div class="absolute bottom-2 left-2 bg-[#423728]/90 text-on-primary px-2 py-0.5 font-label-sm text-[8px] uppercase tracking-widest">
+                NATIONAL ARTIST ARCHIVE
+              </div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.16em] block">GUILLERMO TOLENTINO</span>
+<h3 class="font-headline-md text-[20px] text-primary mt-0.5 leading-snug font-normal italic">
+                The Oblation (Classical Bronze Study)
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+                1935 • Lost-wax cast bronze sculpture on Carrara marble plinth, 120 cm
+              </p>
+<!-- Provenance Ledger Snippet -->
+<div class="mt-3 pt-3 border-t border-[#DCD8D0] text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-outline uppercase block">PROVENANCE:</span>
+<span class="line-clamp-2">Cast in Rome Foundry, Private Manila Estate Acquisition; authenticated 1982.</span>
+</div>
+</div>
+<div class="pt-3 border-t border-[#DCD8D0] space-y-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">ACQUISITION VALUATION</span>
+<span class="font-label-md text-label-md text-primary font-bold">₱18,500,000</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-2 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="requestDossier('Guillermo Tolentino - The Oblation')">
+                  INQUIRE LOT
+                </button>
+<button class="py-2.5 px-2 text-center bg-surface-container border border-[#DCD8D0] text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="viewProvenance('Guillermo Tolentino - The Oblation')">
+                  VIEW DOSSIER
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Vincent van Gogh Exchange Loan -->
+<div class="artwork-card group bg-surface-container-low border border-[#DCD8D0] flex flex-col justify-between transition-all duration-300 hover:border-primary">
+<div class="p-4 border-b border-[#DCD8D0]">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-2">
+<span>LOT: #INT-1888-VG</span>
+<span class="text-secondary font-bold">INTERNATIONAL EXCHANGE</span>
+</div>
+<!-- Artwork Photography -->
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container-highest border border-[#DCD8D0]/60">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Impressionist post-impressionist oil painting study in the manner of Vincent van Gogh depicting shimmering nocturnal stars over the Rhône river, thick expressive impasto brushstrokes in rich ultramarine and luminous gold, archival museum lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC62ExU3bqcCapHb0s-bXXgLZNK7AKTilcD711l25CviJHvhrHzC92eLwpq0BeyE4z02BIecQutgjYVdH8A5jL6QInOn1sXM8HhMQX8GpytKXHurFmDQNaZ1y8QdQdajkgumXd0fDVpXPwxunur-l6K6y7OasA1A0HiDH6vg9RQ5FdnZUPvjnvJ0kQnoG54M6tbBQO6qEoUSP2CM-hNhqx2xSR_9q9yyuGNBZ3OKC1G"/>
+<div class="absolute bottom-2 left-2 bg-[#5A4E3E] text-white px-2 py-0.5 font-label-sm text-[8px] uppercase tracking-widest">
+                SPECIAL EUROPEAN LOAN
+              </div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.16em] block">VINCENT VAN GOGH</span>
+<h3 class="font-headline-md text-[20px] text-primary mt-0.5 leading-snug font-normal italic">
+                Starry Night Over the Rhône (Study)
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+                1888 • Oil on fine linen canvas, 72.5 × 92 cm
+              </p>
+<!-- Provenance Ledger Snippet -->
+<div class="mt-3 pt-3 border-t border-[#DCD8D0] text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-outline uppercase block">PROVENANCE:</span>
+<span class="line-clamp-2">Galerie Bernheim-Jeune Archive; Foundation Collection Geneva; Historia Institutional Loan.</span>
+</div>
+</div>
+<div class="pt-3 border-t border-[#DCD8D0] space-y-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">PROTOCOL STATUS</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">PRIVATE AUCTION ONLY</span>
+</div>
+<button class="w-full py-2.5 px-2 text-center bg-primary text-white hover:bg-secondary transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="requestDossier('Vincent van Gogh - Rhône Study')">
+                REQUEST PRIVATE VIEWING DOSSIER
+              </button>
+</div>
+</div>
+</div>
+<!-- Card 4: Fernando Amorsolo -->
+<div class="artwork-card group bg-surface-container-low border border-[#DCD8D0] flex flex-col justify-between transition-all duration-300 hover:border-primary">
+<div class="p-4 border-b border-[#DCD8D0]">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-2">
+<span>LOT: #MNL-01947</span>
+<span class="text-secondary font-bold">ESTATE CERTIFIED NO. 882</span>
+</div>
+<!-- Artwork Photography -->
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container-highest border border-[#DCD8D0]/60">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luminous Philippine pastoral impressionism oil painting by Fernando Amorsolo showing rice harvesters working in warm golden sunlight under mango trees, gentle river in the distance, backlighting and dappled sun highlights on traditional Filipino dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFMBYaEvlDyVWh6Ie4LzDoh6yla5uGQnLMgDGeaSRyIX32t0H1TEXCsHCsxdbK5ZOgSgql4U-tB6Ex15TuaQNI9OpVTX7oxQMH1xsHOVNaH8EoYrzTp6Es91pcFvr5DR5mwKAacbHOUdGuTp-pylGq2rPfY0Tk3UjGp2Kf37qoSzsI647YxmwRt5t0BQSoiFTG0Ov57EwzkhhXgZdiGOfC_NoJQUF_yKD-mLgDeGL"/>
+<div class="absolute bottom-2 left-2 bg-[#8C7355] text-white px-2 py-0.5 font-label-sm text-[8px] uppercase tracking-widest">
+                PRIME PERIOD: 1947
+              </div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.16em] block">FERNANDO AMORSOLO Y CUENCA</span>
+<h3 class="font-headline-md text-[20px] text-primary mt-0.5 leading-snug font-normal italic">
+                Harvest Scene in Golden Light
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+                1947 • Oil on canvas, 61 × 86 cm
+              </p>
+<!-- Provenance Ledger Snippet -->
+<div class="mt-3 pt-3 border-t border-[#DCD8D0] text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-outline uppercase block">PROVENANCE:</span>
+<span class="line-clamp-2">Authenticated by Amorsolo Estate Foundation; Private Collection Makati; Forbes Park Estate.</span>
+</div>
+</div>
+<div class="pt-3 border-t border-[#DCD8D0] space-y-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">ACQUISITION VALUATION</span>
+<span class="font-label-md text-label-md text-primary font-bold">₱12,800,000</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-2 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="requestDossier('Fernando Amorsolo - Harvest Scene')">
+                  INQUIRE LOT
+                </button>
+<button class="py-2.5 px-2 text-center bg-surface-container border border-[#DCD8D0] text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" onclick="viewProvenance('Fernando Amorsolo - Harvest Scene')">
+                  VIEW DOSSIER
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Provenance Verification Note -->
+<div class="mt-12 p-4 bg-surface-container border border-[#DCD8D0] flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">INSTITUTIONAL GUARANTEE OF AUTHENTICITY</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Every accession in the Historia Vault carries lifetime forensic verification, pigment spectrum analysis, and verified estate provenance.</p>
+</div>
+</div>
+<button class="shrink-0 px-4 py-2 border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors font-label-sm text-label-sm uppercase tracking-widest" onclick="openForensicsModal()">
+          REVIEW METHODOLOGY →
+        </button>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. MASTER ARTISTS CURATORIAL INDEX (Interactive Archival Directory)       -->
+<!-- ========================================================================= -->
+<section class="w-full py-20 lg:py-28 border-b border-[#DCD8D0] bg-surface-container-low">
+<div class="w-full max-w-[1720px] mx-auto px-5 lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-[#DCD8D0] pb-6 mb-10 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.22em] font-bold block mb-1">PROVENANCE &amp; SCHOLARSHIP LEDGER</span>
+<h2 class="font-display-md text-display-md text-primary tracking-tight font-normal uppercase">
+            Archival Artists Index
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A living repository indexing registered masters whose primary historical works and critical monographs are conserved by Historia Art.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Tabular Interactive Directory List (8 Columns) -->
+<div class="lg:col-span-8 border-t border-[#DCD8D0] divide-y divide-[#DCD8D0]">
+<!-- Artist Row 01 -->
+<div class="artist-row group py-5 px-3 transition-colors hover:bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer" onclick="selectArtist('luna')">
+<div class="flex items-start sm:items-center gap-4">
+<span class="font-label-sm text-label-sm text-outline tracking-widest font-mono pt-1 sm:pt-0">01</span>
+<div>
+<span class="font-headline-md text-[22px] text-primary group-hover:text-secondary transition-colors font-normal">JUAN LUNA Y NOVICIO</span>
+<span class="font-label-sm text-label-sm text-outline block sm:inline sm:ml-3">1857–1899</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Academic Realism / Romanticism • Paris &amp; Madrid Salons</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase px-2.5 py-1 bg-surface border border-[#DCD8D0]">4 IN VAULT</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Artist Row 02 -->
+<div class="artist-row group py-5 px-3 transition-colors hover:bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer" onclick="selectArtist('amorsolo')">
+<div class="flex items-start sm:items-center gap-4">
+<span class="font-label-sm text-label-sm text-outline tracking-widest font-mono pt-1 sm:pt-0">02</span>
+<div>
+<span class="font-headline-md text-[22px] text-primary group-hover:text-secondary transition-colors font-normal">FERNANDO AMORSOLO Y CUENCA</span>
+<span class="font-label-sm text-label-sm text-outline block sm:inline sm:ml-3">1892–1972</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Philippine Luminism &amp; Impressionism • First National Artist</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase px-2.5 py-1 bg-surface border border-[#DCD8D0]">11 IN VAULT</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Artist Row 03 -->
+<div class="artist-row group py-5 px-3 transition-colors hover:bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer" onclick="selectArtist('bencab')">
+<div class="flex items-start sm:items-center gap-4">
+<span class="font-label-sm text-label-sm text-outline tracking-widest font-mono pt-1 sm:pt-0">03</span>
+<div>
+<span class="font-headline-md text-[22px] text-primary group-hover:text-secondary transition-colors font-normal">BENEDICTO CABRERA (BENCAB)</span>
+<span class="font-label-sm text-label-sm text-outline block sm:inline sm:ml-3">b. 1942</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Neo-Figurative &amp; Archival Modernism • National Artist for Visual Arts</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase px-2.5 py-1 bg-surface border border-[#DCD8D0]">8 IN VAULT</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Artist Row 04 -->
+<div class="artist-row group py-5 px-3 transition-colors hover:bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer" onclick="selectArtist('tolentino')">
+<div class="flex items-start sm:items-center gap-4">
+<span class="font-label-sm text-label-sm text-outline tracking-widest font-mono pt-1 sm:pt-0">04</span>
+<div>
+<span class="font-headline-md text-[22px] text-primary group-hover:text-secondary transition-colors font-normal">GUILLERMO TOLENTINO</span>
+<span class="font-label-sm text-label-sm text-outline block sm:inline sm:ml-3">1890–1976</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Classical Academic Monumental Sculpture • National Artist for Sculpture</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase px-2.5 py-1 bg-surface border border-[#DCD8D0]">3 IN VAULT</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Artist Row 05 -->
+<div class="artist-row group py-5 px-3 transition-colors hover:bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer" onclick="selectArtist('monet')">
+<div class="flex items-start sm:items-center gap-4">
+<span class="font-label-sm text-label-sm text-outline tracking-widest font-mono pt-1 sm:pt-0">05</span>
+<div>
+<span class="font-headline-md text-[22px] text-primary group-hover:text-secondary transition-colors font-normal">CLAUDE MONET</span>
+<span class="font-label-sm text-label-sm text-outline block sm:inline sm:ml-3">1840–1926</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">French Impressionism • Archival European Exchange Collection</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase px-2.5 py-1 bg-surface border border-[#DCD8D0]">2 IN VAULT</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Artist Row 06 -->
+<div class="artist-row group py-5 px-3 transition-colors hover:bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer" onclick="selectArtist('rodin')">
+<div class="flex items-start sm:items-center gap-4">
+<span class="font-label-sm text-label-sm text-outline tracking-widest font-mono pt-1 sm:pt-0">06</span>
+<div>
+<span class="font-headline-md text-[22px] text-primary group-hover:text-secondary transition-colors font-normal">AUGUSTE RODIN</span>
+<span class="font-label-sm text-label-sm text-outline block sm:inline sm:ml-3">1840–1917</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Modern Bronze Sculpture • Archival Castings &amp; Verified Provenance</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase px-2.5 py-1 bg-surface border border-[#DCD8D0]">1 IN VAULT</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Dynamic Archival Artist Monograph Dossier Preview (4 Columns) -->
+<div class="lg:col-span-4 bg-surface border border-[#DCD8D0] p-6 lg:p-8" id="artist-dossier-card">
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-[#DCD8D0] pb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">ARCHIVAL MONOGRAPH DOSSIER</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-primary text-white" id="dossier-code">HIST-BIO-LUNA</span>
+</div>
+<!-- Portrait / Specimen representation -->
+<div class="aspect-[16/9] w-full bg-surface-container overflow-hidden border border-[#DCD8D0]">
+<img class="w-full h-full object-cover" data-alt="Historical archival sepia portrait photograph of Juan Luna in his Paris painting studio, surrounded by classical easels and masterwork sketches, 19th-century vintage grain" id="dossier-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnMeWrpzB1aLDgBcfj8Nyy-Jn7EnC977J8qfkZOMJsjwly2FHDbD5FWSMqqsh92pNq-apEVzzf_VGGeZDOMYeNC0WLT0gZ5nMjkXz2Sju0d9EBe71LvTf8ITgwh6cwFxpqNzTyQ-aQYeruqwhESXAqFTEPfN1YuRF0FRlH1NNrJ082PYTmPYZJWv9r8ZyISB9euwhgiUba6n0iUCzpy048p0Tf3tyRHqB3ADI6oRPO"/>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-normal" id="dossier-name">JUAN LUNA Y NOVICIO</h3>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mt-1" id="dossier-dates">1857, Badoc — 1899, Hong Kong</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="dossier-bio">
+              Winner of the Gold Medal at the 1884 Exposición Nacional de Bellas Artes in Madrid. Luna stands as the seminal pioneer of Philippine modern identity on the global stage, synthesizing European monumental historicism with incandescent political allegories.
+            </p>
+<div class="bg-surface-container p-3 space-y-1.5 border border-[#DCD8D0] text-label-sm font-label-sm">
+<div class="flex justify-between">
+<span class="text-outline uppercase">AVAILABLE CATALOGS</span>
+<span class="text-primary font-bold" id="dossier-catalogs">3 Monograph Volumes</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline uppercase">REPRESENTED IN VAULT</span>
+<span class="text-secondary font-bold" id="dossier-works">4 Primary Works</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline uppercase">FORENSIC STATUS</span>
+<span class="text-on-surface">Spectrometry Complete</span>
+</div>
+</div>
+<button class="w-full py-3.5 bg-primary text-white hover:bg-secondary transition-colors font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2" onclick="downloadMonograph()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>REQUEST ARTIST MONOGRAPH (PDF)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. MUSEUM SPACES & PRIVATE ACQUISITIONS SUITE                            -->
+<!-- ========================================================================= -->
+<section class="w-full py-20 lg:py-28 bg-surface" id="advisory-suite">
+<div class="w-full max-w-[1720px] mx-auto px-5 lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left: Four Architectural Institutional Locations (6 Columns) -->
+<div class="lg:col-span-6 space-y-8">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.22em] font-bold block mb-1">MUSEUM WINGS &amp; GALLERIA SPACES</span>
+<h2 class="font-display-md text-display-md text-primary tracking-tight font-normal uppercase">
+              Sanctuary of Fine Art
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Four strategically orchestrated architectural pavilions across Metro Manila designed for sensory stillness, museum-grade atmospheric control, and private acquisition viewing.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Wing 1 -->
+<div class="p-5 bg-surface-container-low border border-[#DCD8D0] space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">WING 01 • SAN JUAN</span>
+<h4 class="font-headline-md text-[18px] text-primary">GH Mall Greenhills</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">The Grand Atrium &amp; Private Viewing Suite, Level 3. Dedicated to 19th-century academic masterworks.</p>
+<div class="pt-2 font-label-sm text-label-sm text-outline">DAILY: 10:00 AM — 8:00 PM</div>
+</div>
+<!-- Wing 2 -->
+<div class="p-5 bg-surface-container-low border border-[#DCD8D0] space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">WING 02 • MANDALUYONG</span>
+<h4 class="font-headline-md text-[18px] text-primary">SM Megamall Art Center</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">4th Level Building A. Contemporary wing featuring rotating retrospectives and monumental sculptures.</p>
+<div class="pt-2 font-label-sm text-label-sm text-outline">DAILY: 10:00 AM — 9:00 PM</div>
+</div>
+<!-- Wing 3 -->
+<div class="p-5 bg-surface-container-low border border-[#DCD8D0] space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">WING 03 • PASIG</span>
+<h4 class="font-headline-md text-[18px] text-primary">Ortigas East Pavilion</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Tiendesitas Art &amp; Antique Wing. Archival print archives, rare lithographs, and frame restoration atelier.</p>
+<div class="pt-2 font-label-sm text-label-sm text-outline">TUE — SUN: 11:00 AM — 7:00 PM</div>
+</div>
+<!-- Wing 4 -->
+<div class="p-5 bg-surface-container-low border border-[#DCD8D0] space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">WING 04 • QUEZON CITY</span>
+<h4 class="font-headline-md text-[18px] text-primary">Katipunan Foundation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">White Plains Sculpture Garden &amp; Research Library. Private curatorial visits strictly by appointment.</p>
+<div class="pt-2 font-label-sm text-label-sm text-secondary font-bold">BY APPOINTMENT ONLY</div>
+</div>
+</div>
+<!-- Institutional Credentials Strip -->
+<div class="p-4 bg-surface-container border-l-4 border-secondary flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">TEMPERATURE &amp; HUMIDITY REGULATED</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Strict ISO 18911 archival standards maintained at 20°C (±1°C) and 50% RH (±3%).</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[28px]">thermostat</span>
+</div>
+</div>
+<!-- Right: Private Acquisitions & Collector Advisory Form (6 Columns) -->
+<div class="lg:col-span-6 bg-surface-container border border-[#DCD8D0] p-8 lg:p-10">
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary rounded-full"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">PATRON &amp; COLLECTOR DESK</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight font-normal">
+              Private Curatorial Advisory
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Historia’s curatorial board provides confidential acquisition representation, estate deaccessioning, scientific authentication, and Geneva freeport vault logistics.
+            </p>
+</div>
+<form class="space-y-6" onsubmit="handleAdvisorySubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">COLLECTOR / PATRON NAME *</label>
+<input class="w-full bg-transparent border-0 border-b border-[#DCD8D0] focus:border-primary py-2 text-on-surface font-body-md text-body-md placeholder:text-outline/60 outline-none transition-colors" placeholder="E.g., Don Jaime Zobel" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">OFFICIAL EMAIL *</label>
+<input class="w-full bg-transparent border-0 border-b border-[#DCD8D0] focus:border-primary py-2 text-on-surface font-body-md text-body-md placeholder:text-outline/60 outline-none transition-colors" placeholder="patron@foundation.org" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">INQUIRY CLASSIFICATION</label>
+<select class="w-full bg-transparent border-0 border-b border-[#DCD8D0] focus:border-primary py-2.5 text-on-surface font-body-md text-body-md outline-none transition-colors cursor-pointer">
+<option value="acquisition">Private Masterwork Acquisition [₱10M+]</option>
+<option value="viewing">Private Salon Viewing Suite Reservation (San Juan / Megamall)</option>
+<option value="authentication">Forensic Authentication &amp; Provenance COA</option>
+<option value="consignment">Estate Consignment &amp; Institutional Valuation</option>
+<option value="loan">Museum Exhibition Loan Request</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">CONFIDENTIAL SPECIFICATIONS</label>
+<textarea class="w-full bg-transparent border-0 border-b border-[#DCD8D0] focus:border-primary py-2 text-on-surface font-body-md text-body-md placeholder:text-outline/60 outline-none transition-colors resize-none" placeholder="Indicate specific artists, accession lots, or curatorial parameters..." rows="3"></textarea>
+</div>
+<!-- Archival Protocol Checkbox -->
+<label class="flex items-start gap-3 cursor-pointer pt-2">
+<input class="mt-1 w-4 h-4 rounded-none border border-[#7E766D] text-primary focus:ring-0 cursor-pointer" required="" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
+                I acknowledge that all transactions and provenance communications remain strictly protected under Historia Art’s Curatorial Non-Disclosure Protocol.
+              </span>
+</label>
+<button class="w-full py-4 bg-primary text-white hover:bg-secondary transition-colors font-label-md text-label-md uppercase tracking-[0.18em] flex items-center justify-center gap-2" type="submit">
+<span>SUBMIT ENCRYPTED CURATORIAL INQUIRY</span>
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</form>
+<div class="hidden mt-4 p-3 bg-[#E8E4DC] border border-secondary text-primary font-label-sm text-label-sm uppercase tracking-wider text-center" id="form-success">
+            Dossier Request Lodged. The Chief Curator will contact you within 24 operational hours.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- MODAL: 3D VIRTUAL TOUR DIALOGUE (Black Box Wing)                         -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4" id="virtual-tour-modal">
+<div class="bg-[#181818] border border-[#333] w-full max-w-4xl p-6 sm:p-8 relative text-[#F6F4F0] space-y-6">
+<div class="flex justify-between items-start border-b border-[#333] pb-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">3D CURATORIAL SPATIAL IMMERSION</span>
+<h3 class="font-headline-md text-headline-md text-white mt-1">SM Megamall Pavilion • 4th Level Virtual Tour</h3>
+</div>
+<button class="text-white/60 hover:text-white p-1" onclick="closeVirtualTourModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="relative aspect-video bg-black border border-[#2B2B2B] flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover opacity-80" data-alt="Interior panoramic 3D scan view of a prestigious museum gallery with polished parquet floors, museum track lighting, high ceilings, large gilded frames hanging on deep charcoal walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz1bHgQ3Oz9QNIk7OKrawTKmX3AtBpLY7vCjb4fhvnMZxXsa7y4IUFuSebkb2ETuMbbp9Zdm1Oil6f5ccl5gYMefs8HFuxwEHOFrq5BigcTWW212dtZBbZ8RHrhyqN1Qfzv9kjGzQVD0XkNRO2mTxHC_zWGm-97unK2Mgylr50C-OEjt1qfxzyTDaMFEcqRaMRLqY459ZR_PsrbU_z6_7TN1S_GvFq9GVzigE-kTXZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30"></div>
+<!-- Interactive 3D Spatial Hotspots -->
+<div class="absolute top-1/3 left-1/4 animate-bounce">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/90 text-black flex items-center justify-center font-bold text-xs shadow-lg cursor-pointer">
+            01
+          </div>
+</div>
+<div class="absolute top-1/2 right-1/3 animate-bounce delay-150">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/90 text-black flex items-center justify-center font-bold text-xs shadow-lg cursor-pointer">
+            02
+          </div>
+</div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-xs font-mono bg-black/70 p-3 border border-white/10">
+<span>ACTIVE NODE: TONDO AMORSOLO SALON</span>
+<span>4K PHOTOGRAMMETRY RENDER</span>
+<span class="text-secondary-fixed">CLICK HOTSPOTS TO ADVANCE</span>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="font-label-sm text-label-sm text-[#888] uppercase">BEST VIEWED ON DESKTOP &amp; VR HEADSETS</span>
+<button class="px-5 py-2.5 bg-secondary text-white font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary/80" onclick="closeVirtualTourModal()">
+          CLOSE IMMERSIVE VIEW
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    // Audio Player Toggle Simulation
+    let isPlayingAudio = false;
+    function toggleHeroAudio() {
+      const audioBtn = document.getElementById('hero-audio-btn');
+      const audioIcon = document.getElementById('audio-icon');
+      const audioText = document.getElementById('audio-text');
+      
+      isPlayingAudio = !isPlayingAudio;
+      if (isPlayingAudio) {
+        audioIcon.innerText = 'pause';
+        audioText.innerText = 'PAUSE COMMENTARY (01:14 / 03:42)';
+        audioBtn.classList.remove('bg-primary');
+        audioBtn.classList.add('bg-secondary');
+      } else {
+        audioIcon.innerText = 'volume_up';
+        audioText.innerText = 'AUDIO NOTE (03:42)';
+        audioBtn.classList.add('bg-primary');
+        audioBtn.classList.remove('bg-secondary');
+      }
+    }
+
+    // Virtual Tour Modal Functions
+    function openVirtualTourModal() {
+      document.getElementById('virtual-tour-modal').classList.remove('hidden');
+    }
+    function closeVirtualTourModal() {
+      document.getElementById('virtual-tour-modal').classList.add('hidden');
+    }
+
+    // Artist Index Interactive Dossier Database
+    const artistData = {
+      luna: {
+        code: "HIST-BIO-LUNA",
+        name: "JUAN LUNA Y NOVICIO",
+        dates: "1857, Badoc — 1899, Hong Kong",
+        bio: "Winner of the Gold Medal at the 1884 Exposición Nacional de Bellas Artes in Madrid. Luna stands as the seminal pioneer of Philippine modern identity on the global stage, synthesizing European monumental historicism with incandescent political allegories.",
+        catalogs: "3 Monograph Volumes",
+        works: "4 Primary Works",
+        imgAlt: "Historical archival sepia portrait photograph of Juan Luna in his Paris painting studio, surrounded by classical easels and masterwork sketches, 19th-century vintage grain"
+      },
+      amorsolo: {
+        code: "HIST-BIO-AMORSOLO",
+        name: "FERNANDO AMORSOLO Y CUENCA",
+        dates: "1892, Paco, Manila — 1972, Quezon City",
+        bio: "The inaugural National Artist of the Philippines. Celebrated internationally for pioneering Philippine luminism—capturing the blinding, back-lit equatorial sunlight across lush rural landscapes and idealized pastoral figures.",
+        catalogs: "6 Catalogue Raisonnés",
+        works: "11 Primary Works",
+        imgAlt: "Historical sepia studio photograph of Fernando Amorsolo painting with a brush in his Manila studio, surrounded by oil canvases of Philippine countryside"
+      },
+      bencab: {
+        code: "HIST-BIO-BENCAB",
+        name: "BENEDICTO CABRERA (BENCAB)",
+        dates: "b. 1942, Malabon, Metro Manila",
+        bio: "National Artist for Visual Arts. Internationally revered for his Larawan series and figurative explorations of colonial identity, displacement, and the iconic muse 'Sabel', painted with expressive drafted drapery.",
+        catalogs: "4 Monograph Volumes",
+        works: "8 Primary Works",
+        imgAlt: "Contemporary archival black and white photograph of Benedicto Cabrera Bencab in his Baguio mountain studio surrounded by modern figurative artworks"
+      },
+      tolentino: {
+        code: "HIST-BIO-TOLENTINO",
+        name: "GUILLERMO TOLENTINO",
+        dates: "1890, Malolos — 1976, Quezon City",
+        bio: "The father of classical Philippine monumental sculpture and master of the lost-wax bronze casting technique. Sculptor of the Bonifacio Monument and the iconic UP Oblation.",
+        catalogs: "2 Monograph Volumes",
+        works: "3 Primary Works",
+        imgAlt: "Archival portrait of master sculptor Guillermo Tolentino modeling clay in his classical atelier alongside plaster busts"
+      },
+      monet: {
+        code: "HIST-BIO-MONET",
+        name: "CLAUDE MONET",
+        dates: "1840, Paris — 1926, Giverny, France",
+        bio: "Father of French Impressionism whose emphasis on light and en plein air optical perception revolutionized Western art. The Historia collection maintains two rare preparatory color studies on loan.",
+        catalogs: "1 Curatorial Exchange Dossier",
+        works: "2 In Vault",
+        imgAlt: "Black and white portrait photograph of elder Claude Monet with long white beard standing in his Giverny water lily gardens"
+      },
+      rodin: {
+        code: "HIST-BIO-RODIN",
+        name: "AUGUSTE RODIN",
+        dates: "1840, Paris — 1917, Meudon, France",
+        bio: "Visionary sculptor who broke with decorative academic traditions, emphasizing human psychology, musculature, and raw, unfinished surfaces in bronze and marble.",
+        catalogs: "1 Archival Casting Dossier",
+        works: "1 In Vault",
+        imgAlt: "Archival photograph of Auguste Rodin examining a bronze maquette in his studio in Paris"
+      }
+    };
+
+    function selectArtist(key) {
+      const data = artistData[key];
+      if (!data) return;
+
+      document.getElementById('dossier-code').innerText = data.code;
+      document.getElementById('dossier-name').innerText = data.name;
+      document.getElementById('dossier-dates').innerText = data.dates;
+      document.getElementById('dossier-bio').innerText = data.bio;
+      document.getElementById('dossier-catalogs').innerText = data.catalogs;
+      document.getElementById('dossier-works').innerText = data.works;
+      
+      const img = document.getElementById('dossier-img');
+      img.setAttribute('data-alt', data.imgAlt);
+      
+      // Visual feedback on card
+      const card = document.getElementById('artist-dossier-card');
+      card.classList.add('bg-surface-container-high');
+      setTimeout(() => card.classList.remove('bg-surface-container-high'), 300);
+    }
+
+    // Filter Buttons Visual State
+    function filterCollection(category) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-white');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      event.target.classList.add('bg-primary', 'text-white');
+      event.target.classList.remove('bg-surface-container', 'text-on-surface');
+    }
+
+    // Advisory Form Handler
+    function handleAdvisorySubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('form-success').classList.add('hidden');
+        e.target.reset();
+      }, 5000);
+    }
+
+    // Modal / Alert placeholders for micro-actions
+    function requestDossier(title) {
+      alert("Catalogue Dossier & High-Res Forensic Provenance requested for: " + title + ". Forwarded to Curatorial Acquisitions Desk.");
+    }
+    function viewProvenance(title) {
+      alert("Displaying provenance chain of custody & spectroscopic analysis records for: " + title);
+    }
+    function downloadMonograph() {
+      alert("Generating encrypted digital archival PDF monograph. Check your registered institution mailbox.");
+    }
+    function openForensicsModal() {
+      alert("Historia Art Laboratory Standards: Raman spectroscopy, X-ray fluorescence (XRF), and historical canvas weave density verification protocol.");
+    }
+  </script>
+</div></main><footer class="w-full bg-[#E8E4DC] border-t border-[#DCD8D0] pt-space-xl pb-12"><div class="w-full px-5 lg:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop"><div class="flex flex-col"><span class="font-headline-md text-headline-md uppercase text-on-surface mb-space-sm">HISTORIA</span><p class="font-body-md text-body-md text-on-surface-variant uppercase tracking-wider mb-space-md">Manila, Est. 2015</p><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">An avant-garde curatorial institution dedicated to premier Southeast Asian modernism, historical masterworks, and uncompromising contemporary provenance.</p><div class="pt-space-sm border-t border-[#DCD8D0] flex flex-col gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">[MEMBER: APAG // ASSOC. PHILIPPINE ART GALLERIES]</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">[INSTITUTIONAL ACCREDITATION: ICOM #2015-MNL]</span></div></div><div class="flex flex-col"><span class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface font-bold mb-space-md">MUSEUM SPACES &amp; WINGS</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li class="border-b border-[#DCD8D0]/60 pb-2"><strong class="text-on-surface block font-normal">San Juan Wing</strong>Level 3, GH Mall, Greenhills Center</li><li class="border-b border-[#DCD8D0]/60 pb-2"><strong class="text-on-surface block font-normal">Mandaluyong Vitrine</strong>Art Center 4F, SM Megamall Building A</li><li class="border-b border-[#DCD8D0]/60 pb-2"><strong class="text-on-surface block font-normal">Pasig Pavilion</strong>Tiendesitas Art &amp; Antique Wing, Ortigas East</li><li class="pb-1"><strong class="text-on-surface block font-normal">Katipunan Foundation</strong>White Plains Sculpture Garden, QC</li></ul></div><div class="flex flex-col"><span class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface font-bold mb-space-md">ACQUISITIONS &amp; ADVISORY</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li class="border-b border-[#DCD8D0]/60 pb-2">Private Curatorial Viewing Suites</li><li class="border-b border-[#DCD8D0]/60 pb-2">Forensic Masterwork Authentication</li><li class="border-b border-[#DCD8D0]/60 pb-2">Secondary Market Provenance Research</li><li class="border-b border-[#DCD8D0]/60 pb-2">Institutional Valuation &amp; Estate Appraisals</li><li class="pb-1">Archival Temperature-Controlled Vault Storage</li></ul></div><div class="flex flex-col"><span class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface font-bold mb-space-sm">THE CURATORIAL GAZETTE</span><p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Quarterly monographs, private acquisition previews, and institutional scholarship.</p><form class="flex flex-col gap-space-sm mb-space-lg" onsubmit="return false;"><div class="relative"><input class="w-full bg-transparent border-0 border-b border-[#DCD8D0] focus:border-primary px-0 py-2 font-label-md text-label-md text-on-surface placeholder:text-outline outline-none transition-colors" placeholder="CURATORIAL DISPATCH EMAIL" type="email"/><button class="absolute right-0 bottom-2 font-label-sm text-label-sm text-primary uppercase hover:underline" type="submit">ENROLL -&gt;</button></div></form><div class="border-t border-[#DCD8D0] pt-space-sm flex flex-col gap-1"><span class="font-label-md text-label-md uppercase text-on-surface font-bold">GALLERY PROTOCOL HOURS</span><span class="font-body-md text-body-md text-on-surface-variant">TUE — SUN: 10:00 AM — 8:00 PM PHT</span><span class="font-body-md text-body-md text-on-surface-variant">MON: RESERVED FOR RESTORATION &amp; VAULT INVENTORY</span></div></div></div><div class="w-full border-t border-[#DCD8D0] mt-space-xl pt-space-md overflow-hidden"><div class="w-full text-center select-none pointer-events-none"><span class="font-display-lg text-[64px] sm:text-[110px] md:text-[160px] lg:text-[210px] leading-none uppercase tracking-[-0.04em] text-[#DCD8D0]/80 block font-normal">HISTORIA</span></div><div class="w-full px-5 lg:px-margin-desktop flex flex-col sm:flex-row items-center justify-between gap-4 mt-2"><span class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-on-surface-variant">© 2015–2025 HISTORIA ART GALLERY INC. ALL RIGHTS RESERVED.</span><span class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-on-surface-variant">[ARCHIVAL RECORD LOC: MNL // CODE: HIST-2025-ARCHIVE]</span></div></div></footer></body></html>
