@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ArrowUpRight, Compass, ShoppingBag, Search, ChevronDown } from 'lucide-react';
 import { PageView, ArtworkCategory } from '../types';
 
@@ -27,6 +27,29 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [collectionDropdownOpen, setCollectionDropdownOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('');
+  const dropdownTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleOpenDropdown = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setCollectionDropdownOpen(true);
+  };
+
+  const handleCloseDropdown = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setCollectionDropdownOpen(false);
+    }, 150);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,6 +102,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, [currentView]);
 
   const handleSelectCollectionCategory = (category: ArtworkCategory) => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
     setCollectionDropdownOpen(false);
     onSelectCategory?.(category);
 
@@ -95,6 +122,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   };
 
   const handleNavClick = (link: 'collection' | 'exhibitions' | 'artists' | 'about' | 'contact') => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
     setMobileMenuOpen(false);
     setCollectionDropdownOpen(false);
 
@@ -167,11 +198,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* COLLECTION with Minimal Hover Dropdown */}
             <div
               className="relative"
-              onMouseEnter={() => setCollectionDropdownOpen(true)}
-              onMouseLeave={() => setCollectionDropdownOpen(false)}
+              onMouseEnter={handleOpenDropdown}
+              onMouseLeave={handleCloseDropdown}
             >
               <button
                 onClick={() => handleNavClick('collection')}
+                aria-haspopup="true"
+                aria-expanded={collectionDropdownOpen}
                 className={`relative inline-flex items-center gap-1 text-[11px] font-mono tracking-[0.18em] uppercase transition-colors duration-300 whitespace-nowrap py-1 focus:outline-none ${
                   isDarkTheme
                     ? currentView === 'home' && activeSection === 'masterworks'
@@ -196,30 +229,32 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               {/* Minimalist Floating Category Dropdown */}
               {collectionDropdownOpen && (
-                <div
-                  className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52 py-2 rounded-sm border shadow-2xl backdrop-blur-md text-xs font-mono transition-all duration-200 z-50 animate-fadeIn ${
-                    isDarkTheme
-                      ? 'bg-[#121212]/95 border-white/10 text-[#F6F4F0]'
-                      : 'bg-[#F6F4F0]/95 border-[#DCD8D0] text-gallery-obsidian'
-                  }`}
-                >
-                  <div className="px-4 py-1 text-[9px] font-mono tracking-widest uppercase text-gallery-muted border-b border-white/5 pb-1 mb-1">
-                    Fine Art Catalog Pillars
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                  <div
+                    className={`w-52 py-2 rounded-sm border shadow-2xl backdrop-blur-md text-xs font-mono transition-all duration-200 animate-fadeIn ${
+                      isDarkTheme
+                        ? 'bg-[#121212]/95 border-white/10 text-[#F6F4F0]'
+                        : 'bg-[#F6F4F0]/95 border-[#DCD8D0] text-gallery-obsidian'
+                    }`}
+                  >
+                    <div className="px-4 py-1 text-[9px] font-mono tracking-widest uppercase text-gallery-muted border-b border-white/5 pb-1 mb-1">
+                      Fine Art Catalog Pillars
+                    </div>
+                    {collectionCategories.map((cat) => (
+                      <button
+                        key={cat.value}
+                        onClick={() => handleSelectCollectionCategory(cat.value)}
+                        className={`px-4 py-2 text-[10px] tracking-wider uppercase block text-left w-full transition-colors ${
+                          isDarkTheme
+                            ? 'hover:bg-white/10 hover:text-[#B3936E]'
+                            : 'hover:bg-black/5 hover:text-gallery-bronze'
+                        }`}
+                        data-cursor-text={cat.label.toUpperCase()}
+                      >
+                        {cat.label}
+                      </button>
+                    ))}
                   </div>
-                  {collectionCategories.map((cat) => (
-                    <button
-                      key={cat.value}
-                      onClick={() => handleSelectCollectionCategory(cat.value)}
-                      className={`px-4 py-2 text-[10px] tracking-wider uppercase block text-left w-full transition-colors ${
-                        isDarkTheme
-                          ? 'hover:bg-white/10 hover:text-[#B3936E]'
-                          : 'hover:bg-black/5 hover:text-gallery-bronze'
-                      }`}
-                      data-cursor-text={cat.label.toUpperCase()}
-                    >
-                      {cat.label}
-                    </button>
-                  ))}
                 </div>
               )}
             </div>
